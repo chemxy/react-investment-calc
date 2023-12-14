@@ -20,32 +20,32 @@ export default function UserInput2({input, showResult}) {
     return (
         <div id="user-input">
             <div className="input-group">
-                <p>
+                <div>
                     <label>Initial Investment</label>
                     <input type="number" required
                            value={userInput.initialInvestment}
                            onChange={(event) => handleChange('initialInvestment', event.target.value)}/>
-                </p>
-                <p>
+                </div>
+                <div>
                     <label>Annual Investment</label>
                     <input type="number" required
                            value={userInput.annualInvestment}
                            onChange={(event) => handleChange('annualInvestment', event.target.value)}/>
-                </p>
+                </div>
             </div>
             <div className="input-group">
-                <p>
+                <div>
                     <label>Expected Return</label>
                     <input type="number" required
                            value={userInput.expectedReturn}
                            onChange={(event) => handleChange('expectedReturn', event.target.value)}/>
-                </p>
-                <p>
+                </div>
+                <div>
                     <label>Duration</label>
                     <input type="number" required
                            value={userInput.duration}
                            onChange={(event) => handleChange('duration', event.target.value)}/>
-                </p>
+                </div>
             </div>
             <div>
                 <button id="show-result-button" onClick={submitResult}>show</button>
