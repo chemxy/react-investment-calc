@@ -14,7 +14,7 @@ function App() {
         duration: 10
     })
 
-    // one way - user input 1
+    // option 1
     // function handleChange(type, newValue) {
     //     const updatedUserInput = {
     //         ...userInput,
@@ -25,7 +25,7 @@ function App() {
     //     // setShow(false)
     // }
 
-    //another way - user input 2
+    //option 2
     const [show, setShow] = useState(false);
 
     function showResult(input) {
@@ -39,10 +39,11 @@ function App() {
     return (
         <div className="App">
             <Header/>
-
+            {/*option 1*/}
             {/*<UserInput userInput={userInput} onChangeInput={handleChange}/>*/}
             {/*{isInputValid  && <Results input={userInput}/>}*/}
 
+            {/*option 2*/}
             <UserInput2 input={userInput} showResult={showResult}/>
             {isInputValid && show && <Results input={userInput}/>}
 

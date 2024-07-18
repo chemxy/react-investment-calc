@@ -92,9 +92,14 @@ body {
     text-align: center;
 }
 
-#show-result-button{
+#show-result-button {
     width: 100px;
     height: 50px;
     border-radius: 50px;
     font-size: 22px;
+    margin-top: 20px;
+}
+
+#show-result-button:hover {
+    cursor: pointer;
 }
